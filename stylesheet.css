@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit, sans-serif;
+}
+:root{
+  --primary-color: var(gray);
+  --secondary-color: var(black);
+}
+body {
+  background-image: url(assets/BG-Tx-1.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #111111;
+  /* background-color: rgb(59, 59, 59); */
+  background-attachment: fixed;
+}
+header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #8080803b;
+}
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mailbox-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgb(72, 72, 72);
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #181818;
+}
+.mailbox-logo > a > img {
+  width: 20px;
+}
+.header-right {
+  display: flex;
+  /*   min-width: 150px; */
+  align-items: center;
+  justify-content: space-between;
+}
+.header-right > div {
+  color: grey;
+}
+
+/*==========Style========*/
+
+.contact-text > a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #9a9a9a;
+}
+.header-right > div > a {
+  font-weight: 300;
+  text-decoration: none;
+  padding-inline: 3px;
+  color: grey;
+  transition: all .1s ease-in;
+}
+
+.hero {
+  padding-top: 50px;
+}
+.box-1 {
+  margin-inline: 200px;
+  text-align: center;
+}
+.profile-logo > img {
+  width: 150px;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.bio {
+  color: #9a9a9a;
+  font-size: 18px;
+  font-weight: 200;
+}
+.text {
+  margin-top: 20px;
+  color: grey;
+  font-size: 55px;
+  background: linear-gradient(125deg, #ffffff, #3d3d3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn {
+  border: 1px solid rgb(42, 42, 42);
+  padding-inline: 35px;
+  padding-block: 18px;
+  border-radius: 4px;
+  background-color: #181818;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(0.8);
+}
+.btn > a {
+  color: grey;
+  text-decoration: none;
+  font-size: 18px;
+}
+.btn > a > img {
+  width: 15px;
+  margin-left: 4px;
+}
+.second-container {
+  margin-top: 80px;
+}
+.heading {
+  text-align: center;
+}
+.heading > h1 {
+  font-size: 55px;
+  margin-bottom: 70px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #ffffff, #3d3d3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards {
+  padding-bottom: 100px;
+}
+.inner-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.container-1 {
+  flex-basis: 23%;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  padding-inline: 25px;
+  border-radius: 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #181818;
+  border: 1px solid rgb(42, 42, 42);
+}
+.container-1 > h3,
+p {
+  color: gray;
+}
+.container-1 > h3 {
+  margin-block: 12px;
+}
+.container-1 > p {
+  margin-top: 8px;
+  font-size: 15px;
+}
+.inner-container {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #8080803b;
+}
+.last-heading {
+  font-size: 50px;
+}
+.button2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn2 {
+  border: 1px solid rgb(42, 42, 42);
+  padding-inline: 35px;
+  padding-block: 18px;
+  border-radius: 4px;
+  background-color: #181818;
+  transition: all 0.3s ease-in-out;
+}
+.btn2 > a {
+  color: grey;
+  text-decoration: none;
+  font-size: 18px;
+}
+.btn2 > a > img {
+  width: 16px;
+  margin-left: 4px;
+}
+.btn2:hover {
+  transform: scale(0.8);
+}
+.end-container {
+  width: 75%;
+  margin: auto;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #8080803b;
+}
+.footer {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 10px;
+  margin-inline: auto;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+}
+.signature {
+  display: flex;
+  align-items: center;
+  color: gray;
+  color: whitesmoke;
+}
+.footer-right > div > a {
+  font-weight: 300;
+  text-decoration: none;
+  color: grey;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-right > div {
+  color: grey;
+}
+
+/*---=====Logo link====---*/
+.logo-right {
+  display: none;
+}
+/*===Hover-Effect ===*/
+.area :hover {
+  color: whitesmoke;
+}
+.header-right :hover a {
+  color: whitesmoke;
+}
+.footer-right :hover a {
+  color: whitesmoke;
+}
+.button :hover a {
+  color: #ffffff;
+}
+.button2 :hover a {
+  color: #ffffff;
+}
+.logo-right > div > a :hover {
+  color: whitesmoke;
+}
+/*==-------------Media Queries--------==*/
+@media only screen and (max-width: 1024px) {
+  .header {
+    width: 90%;
+  }
+  .box-1 {
+    margin-inline: 115px;
+  }
+  .inner-container {
+    width: 90%;
+    gap: 10px;
+  }
+  .container-1 {
+    flex-basis: 49%;
+  }
+  .footer {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header-right {
+    display: none;
+  }
+  .footer-right {
+    display: none !important;
+  }
+  .logo-right {
+    display: block;
+  }
+  .logo-right {
+    display: flex;
+    align-items: center;
+    color: gray;
+  }
+  .logo-right > div > a {
+    color: rgb(255, 255, 255);
+    padding-inline: 6px;
+    font-size: 18px;
+  }
+  .profile-logo > img {
+    width: 120px;
+    height: 120px;
+  }
+  .box-1 {
+    margin-inline: 25px;
+  }
+  .text {
+    font-size: 35px;
+  }
+  .heading > h1 {
+    font-size: 32px;
+  }
+  .last-heading {
+    font-size: 40px !important;
+  }
+  .btn2 {
+    padding-block: 20px;
+    padding-inline: 20px;
+  }
+  .btn2 > a {
+    font-size: 15px;
+  }
+  .btn {
+    padding-inline: 20px;
+    padding-block: 15px;
+  }
+  .btn > a {
+    font-size: 15px;
+  }
+
+  .inner-container {
+    justify-content: center;
+  }
+  .container-1 {
+    flex-basis: 90%;
+  }
+  .container-1 > p {
+    font-size: 18px;
+  }
+  .cards {
+    padding-bottom: 60px !important;
+  }
+  .end-container {
+    width: 90% !important;
+    padding-bottom: 60px !important;
+  }
+  .footer-left {
+    font-size: 5px;
+  }
+  .signature {
+    font-size: 10px;
+  }
+  .last-logo {
+    padding-inline: 2px !important;
+    font-size: 11px !important;
+  }
+}
