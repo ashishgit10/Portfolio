@@ -6,18 +6,34 @@
   box-sizing: border-box;
   font-family: Outfit, sans-serif;
 }
-:root{
-  --primary-color: var(gray);
-  --secondary-color: var(black);
+:root {
+  --bg-color: #111111;
+  --border-color: #8080803b;
+  --text-color: grey;
+  --grd-first: #ffffff;
+  --grd-second: #3d3d3d;
+  --hover-btn: whitesmoke;
+  --sign-clr: whitesmoke;
+  --logo-color: whitesmoke;
+}
+.light-theme {
+  --bg-color: #ffffff;
+  --border-color: #0000003b;
+  --text-color: rgb(0, 0, 0);
+  --grd-first: #000000;
+  --grd-second: #c7c7c7;
+  --hover-btn: rgb(255, 48, 48);
+  --sign-clr: rgb(0, 0, 0);
+  --logo-color: black;
 }
 body {
   background-image: url(assets/BG-Tx-1.svg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #111111;
-  /* background-color: rgb(59, 59, 59); */
+  background-color: var(--bg-color);
   background-attachment: fixed;
+  transition: background 0.8s,color 0.8s;
 }
 header {
   margin-left: auto;
@@ -29,7 +45,7 @@ header {
   justify-content: space-between;
   margin-block: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #8080803b;
+  border-bottom: 1px solid var(--border-color);
 }
 .header-left {
   display: flex;
@@ -42,10 +58,10 @@ header {
   justify-content: center;
   width: 45px;
   height: 45px;
-  border: 1px solid rgb(72, 72, 72);
+  border: 1px solid var(--border-color);
   border-radius: 50%;
   margin-right: 10px;
-  background-color: #181818;
+  background-color: var(--bg-color);
 }
 .mailbox-logo > a > img {
   width: 20px;
@@ -57,7 +73,7 @@ header {
   justify-content: space-between;
 }
 .header-right > div {
-  color: grey;
+  color: var(--text-color);
 }
 
 /*==========Style========*/
@@ -65,14 +81,14 @@ header {
 .contact-text > a {
   text-decoration: none;
   font-weight: 300;
-  color: #9a9a9a;
+  color: var(--text-color);
 }
 .header-right > div > a {
   font-weight: 300;
   text-decoration: none;
   padding-inline: 3px;
-  color: grey;
-  transition: all .1s ease-in;
+  color: var(--text-color);
+  transition: all 0.1s ease-in;
 }
 
 .hero {
@@ -90,15 +106,15 @@ header {
   margin-bottom: 15px;
 }
 .bio {
-  color: #9a9a9a;
+  color: var(--text-color);
   font-size: 18px;
   font-weight: 200;
 }
 .text {
   margin-top: 20px;
-  color: grey;
+  color: var(--text-color);
   font-size: 55px;
-  background: linear-gradient(125deg, #ffffff, #3d3d3d);
+  background: linear-gradient(125deg, var(--grd-first), var(--grd-second));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -109,18 +125,18 @@ header {
   cursor: pointer;
 }
 .btn {
-  border: 1px solid rgb(42, 42, 42);
+  border: 1px solid var(--border-color);
   padding-inline: 35px;
   padding-block: 18px;
   border-radius: 4px;
-  background-color: #181818;
+  background-color: var(--bg-color);
   transition: all 0.3s ease-in-out;
 }
 .btn:hover {
   transform: scale(0.8);
 }
 .btn > a {
-  color: grey;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
 }
@@ -138,7 +154,7 @@ header {
   font-size: 55px;
   margin-bottom: 70px;
   font-weight: 400;
-  background: linear-gradient(90deg, #ffffff, #3d3d3d);
+  background: linear-gradient(90deg, var(--grd-first), var(--grd-second));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -161,12 +177,12 @@ header {
   border-radius: 6px;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #181818;
-  border: 1px solid rgb(42, 42, 42);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
 }
 .container-1 > h3,
 p {
-  color: gray;
+  color: var(--text-color);
 }
 .container-1 > h3 {
   margin-block: 12px;
@@ -177,7 +193,7 @@ p {
 }
 .inner-container {
   padding-bottom: 100px;
-  border-bottom: 1px solid #8080803b;
+  border-bottom: 1px solid var(--border-color);
 }
 .last-heading {
   font-size: 50px;
@@ -190,15 +206,15 @@ p {
   cursor: pointer;
 }
 .btn2 {
-  border: 1px solid rgb(42, 42, 42);
+  border: 1px solid var(--border-color);
   padding-inline: 35px;
   padding-block: 18px;
   border-radius: 4px;
-  background-color: #181818;
+  background-color: var(--bg-color);
   transition: all 0.3s ease-in-out;
 }
 .btn2 > a {
-  color: grey;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
 }
@@ -213,7 +229,7 @@ p {
   width: 75%;
   margin: auto;
   padding-bottom: 100px;
-  border-bottom: 1px solid #8080803b;
+  border-bottom: 1px solid var(--border-color);
 }
 .footer {
   width: 75%;
@@ -226,18 +242,17 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: gray;
+  color: var(--text-color);
 }
 .signature {
   display: flex;
   align-items: center;
-  color: gray;
-  color: whitesmoke;
+  color: var(--sign-clr);
 }
 .footer-right > div > a {
   font-weight: 300;
   text-decoration: none;
-  color: grey;
+  color: var(--text-color);
 }
 .footer-right {
   display: flex;
@@ -245,31 +260,38 @@ p {
   justify-content: space-between;
 }
 .footer-right > div {
-  color: grey;
+  color: var(--text-color);
 }
-
+.mode-logo{
+  font-size:25px;
+  cursor: pointer;
+}
+.contact-text{
+  display: flex;
+  align-items: center;
+}
 /*---=====Logo link====---*/
 .logo-right {
   display: none;
 }
 /*===Hover-Effect ===*/
 .area :hover {
-  color: whitesmoke;
+  color: var(--hover-btn);
 }
 .header-right :hover a {
-  color: whitesmoke;
+  color: var(--hover-btn);
 }
 .footer-right :hover a {
-  color: whitesmoke;
+  color: var(--hover-btn);
 }
 .button :hover a {
-  color: #ffffff;
+  color: var(--hover-btn);
 }
 .button2 :hover a {
-  color: #ffffff;
+  color: var(--hover-btn);
 }
 .logo-right > div > a :hover {
-  color: whitesmoke;
+  color: var(--hover-btn);
 }
 /*==-------------Media Queries--------==*/
 @media only screen and (max-width: 1024px) {
@@ -303,10 +325,10 @@ p {
   .logo-right {
     display: flex;
     align-items: center;
-    color: gray;
+    color: var(--text-color);
   }
   .logo-right > div > a {
-    color: rgb(255, 255, 255);
+    color: var(--logo-color);
     padding-inline: 6px;
     font-size: 18px;
   }
@@ -366,5 +388,8 @@ p {
   .last-logo {
     padding-inline: 2px !important;
     font-size: 11px !important;
+  }
+  .mode-logo{
+    font-size: 20px;
   }
 }
