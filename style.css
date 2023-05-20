@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   background-attachment: fixed;
-  transition: background 0.8s,color 0.8s;
+  transition: background 0.8s, color 0.8s;
 }
 header {
   margin-left: auto;
@@ -262,11 +262,11 @@ p {
 .footer-right > div {
   color: var(--text-color);
 }
-.mode-logo{
-  font-size:25px;
+.mode-logo {
+  font-size: 25px;
   cursor: pointer;
 }
-.contact-text{
+.contact-text {
   display: flex;
   align-items: center;
 }
@@ -389,7 +389,7 @@ p {
     padding-inline: 2px !important;
     font-size: 11px !important;
   }
-  .mode-logo{
-    font-size: 20px;
+  .mode-logo {
+    font-size: 25px;
   }
 }
