@@ -262,9 +262,12 @@ p {
 .footer-right > div {
   color: var(--text-color);
 }
-.mode-logo {
-  font-size: 25px;
+.light > img {
+  width: 25px;
+  margin-left: 10px;
+  text-align: center;
   cursor: pointer;
+  transition: all 1s;
 }
 .contact-text {
   display: flex;
