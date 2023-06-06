@@ -7,16 +7,6 @@
   font-family: Outfit, sans-serif;
 }
 :root {
-  --bg-color: #111111;
-  --border-color: #8080803b;
-  --text-color: grey;
-  --grd-first: #ffffff;
-  --grd-second: #3d3d3d;
-  --hover-btn: whitesmoke;
-  --sign-clr: whitesmoke;
-  --logo-color: whitesmoke;
-}
-.light-theme {
   --bg-color: #ffffff;
   --border-color: #0000003b;
   --text-color: rgb(0, 0, 0);
@@ -25,6 +15,16 @@
   --hover-btn: rgb(255, 48, 48);
   --sign-clr: rgb(0, 0, 0);
   --logo-color: black;
+}
+.dark-theme {
+  --bg-color: #111111;
+  --border-color: #8080803b;
+  --text-color: grey;
+  --grd-first: #ffffff;
+  --grd-second: #3d3d3d;
+  --hover-btn: whitesmoke;
+  --sign-clr: whitesmoke;
+  --logo-color: whitesmoke;
 }
 body {
   background-image: url(assets/BG-Tx-1.svg);
