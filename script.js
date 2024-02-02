@@ -10,7 +10,7 @@ switch1.onclick = (icon) => {
 };
 
 var typed = new Typed(".span1", {
-  strings: ["Student", "Web Developer"],
+  strings: ["Student", "Web Developer"," App Developer"],
   typeSpeed: 140,
   backSpeed: 80,
   loop: true,
